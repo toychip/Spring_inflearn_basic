@@ -11,7 +11,7 @@ public class MemberServiceTest {
     // MemberService memberService = new MemberServiceImpl();
     MemberService memberService;
 
-    @BeforeEach
+    @BeforeEach // 각 테스트 전에 이것을 무조건 실행
     public void beforeEach(){
         AppConfig appConfig = new AppConfig();
         memberService = appConfig.memberService();

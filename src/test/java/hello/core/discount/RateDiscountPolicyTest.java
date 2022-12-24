@@ -8,6 +8,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.*;
 import static org.junit.jupiter.api.Assertions.*;
+// static import 옵션 엔터로 하기
 
 class RateDiscountPolicyTest {
 
@@ -34,6 +35,7 @@ class RateDiscountPolicyTest {
         int discount = discountPolicy.discount(member, 10000);
         //then
         assertThat(discount).isEqualTo(0);
+        // basic이므로 할인이 되면 안된다
     }
 
 }
